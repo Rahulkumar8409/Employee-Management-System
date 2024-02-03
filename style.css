@@ -1,0 +1,62 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
+}
+
+.model {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #9d9d9d5b;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+}
+
+.model-body {
+  background-color: white;
+  padding: 30px;
+}
+
+.model form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.show-model {
+  display: flex;
+}
+.hide-model {
+  display: none;
+}
+#close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.Employee-List {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+.Employee-List,
+td,
+th {
+  border: 1px solid black;
+}
+.Employee-List td {
+  text-align: center;
+  padding: 10px;
+}
+
+.center-model {
+  justify-content: center;
+  align-items: center;
+}
+.update-model-body {
+  width: 400px;
+}

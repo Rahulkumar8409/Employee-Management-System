@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,400&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d578e0690c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="create-section">
+      <button id="model-toggle-btn">Create Employee</button>
+      <div class="model hide-model" id="model">
+        <i class="fa-solid fa-xmark" id="close-icon"></i>
+        <div class="model-body">
+          <h1>Enter Employee details</h1>
+          <form id="form">
+            <input
+              type="text"
+              placeholder="Name of Employee"
+              name="fullName"
+              required
+            />
+            <input type="email" placeholder="email" name="email" required />
+            <select name="role">
+              <option value="SDE">SDE</option>
+              <option value="Product">Product</option>
+              <option value="Analyst">Analyst</option>
+            </select>
+            <input type="date" name="doj" required />
+            <div>
+              <div>
+                <input type="radio" name="gender" id="male" value="Male" />
+                <label for="male">Male</label>
+              </div>
+              <div>
+                <input type="radio" name="gender" id="female" value="Female" />
+                <label for="female">female</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  id="others"
+                  value="others"
+                  required
+                />
+                <label for="others">others</label>
+              </div>
+            </div>
+            <button id="add-Employee">Add Employee</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <table class="Employee-List" id="Employee-List">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Employee</th>
+          <th>Role</th>
+          <th>Date of Joining</th>
+          <th>gender</th>
+          <th>Option</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="model center-model hide-model" id="model1">
+      <div class="model-body update-model-body">
+        <form id="form1">
+          <input
+            type="text"
+            placeholder="Name of Employee"
+            name="name"
+            required
+          />
+          <input type="email" placeholder="email" name="email" required />
+          <select name="role">
+            <option value="SDE">SDE</option>
+            <option value="Product">Product</option>
+            <option value="Analyst">Analyst</option>
+          </select>
+          <input type="date" name="doj" required />
+          <div>
+            <div>
+              <input type="radio" name="gender" id="update-male" value="Male" />
+              <label for="update-male">Male</label>
+            </div>
+            <div>
+              <input type="radio" name="gender" id="update-female" value="Female" />
+              <label for="update-female">female</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="gender"
+                id="update-others"
+                value="others"
+                required
+              />
+              <label for="update-others">others</label>
+            </div>
+          </div>
+          <button id="add-Employee">Add Employee</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
